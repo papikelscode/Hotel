@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Assets/style.css">
+    <style>
+         :root {
+            --green: #27ae60;
+            --black: #444;
+            --light-color: #777;
+            --bg-color: #e6e6e6;
+            --border: 1rem solid rgba (0, 0, 0, .2);
+            --box-shadow: .4rem .4rem .1rem #ccc, -.4rem -.4rem 1rem #fff;
+            --box-shadow-inset: .4rem .4rem .1rem #ccc inset, -.4rem -.4rem .1rem #fff inset;
+        }
+        
+        * {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+            border: none;
+            text-decoration: none;
+            text-transform: capitalize;
+            transition: .2s linear;
+        }
+        
+        .contact form {
+            margin: 1rem auto;
+            max-width: 70rem;
+            border-radius: .5rem;
+            box-shadow: var(--box-shadow);
+            padding: 2rem;
+        }
+        
+        .contact form .box {
+            padding: 1rem 1.5rem;
+            width: 100%;
+            background: none;
+            color: var(--black);
+            font-size: 1.6rem;
+            text-transform: none;
+            margin: .7rem 0;
+            box-shadow: var(--box-shadow);
+            border-radius: .5rem;
+        }
+        
+        .contact form textarea {
+            height: 20rem;
+            resize: none;
+        }
+        
+        .contact form .box:focus {
+            box-shadow: var(--box-shadow-inset);
+        }
+        
+        body {
+            background: var(--bg-color);
+        }
+        
+        body.active {
+            --black: #fff;
+            --light-color: #ddd;
+            --bg-color: #222;
+            --border: .1rem solid rgba(0, 0, 0, .4);
+            --box-shadow: .4rem .4rem 1rem #111, -.4rem -.4rem 1rem #333;
+            --box-shadow-inset: .4rem .4rem 1rem #111 inset, -.4rem -.4rem 1rem #333 inset;
+        }
+        
+        .heading {
+            text-align: center;
+            font-size: 2rem;
+            color: #ff9900;
+            text-transform: uppercase;
+            padding-bottom: 2rem;
+        }
+        
+        .heading span {
+            color: black;
+            text-transform: uppercase;
+        }
+        
+        .btn {
+            margin-top: 1rem;
+            display: inline-block;
+            padding: 1rem 3.5rem;
+            border-radius: .5rem;
+            font-size: 1.7rem;
+            cursor: pointer;
+            background: none;
+            color: var(--black);
+            box-shadow: var(--box-shadow);
+        }
+    </style>
+
+    <title>Hotel</title>
+</head>
+
+<body>
+    <!---start-Wrap--->
+    <!---start-header--->
+    <div class="header">
+        <div class="wrap">
+            <div class="header-top">
+                <div class="logo">
+                    <a href="index.html"><img src="#" title="logo" />HOTEL</a>
+                </div>
+                <div class="contact-info">
+                    <p class="phone">Call us : <a href="#">09037066684</a></p>
+                    <p class="gpa">Gpa : <a href="#">View map</a></p>
+                    <p class="code">BROUGHT TO YOU BY:
+                        <a href="#">papikelscode</a>
+                    </p>
+                </div>
+                <div class="clear"> </div>
+            </div>
+        </div>
+        <div class="header-top-nav">
+            <div class="wrap">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li class="active"><a href="./contact.html">Contact</a></li>
+                    <div class="clear"> </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <section class="contact" id="contact">
+
+        <h1 class="heading"> <span>contact</span> me </h1>
+
+        <form action="">
+            <input type="text" placeholder="your name" class="box">
+            <input type="email" placeholder="your email" class="box">
+            <input type="text" placeholder="subject" class="box">
+            <textarea name="" class="box" placeholder="your message" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="send message" class="btn">
+        </form>
+
+    </section>
+
+    <!-- contact section ends -->
+    <!---End-about---->
+    <div class="clear"> </div>
+    <div class="boxs">
+        <div class="wrap">
+            <div class="box">
+
+            </div>
+            <div class="box center-box">
+                <ul>
+                    <li><a href="#">Leave a Feedback</a></li>
+                    <li><a href="#">Reviews and Ratings</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Packages</a></li>
+                </ul>
+            </div>
+            <div class="box">
+
+            </div>
+            <div class="clear"> </div>
+        </div>
+        <!---start-box---->
+    </div>
+    <!---start-copy-Right----->
+    <div class="copy-tight">
+        <p> HOTEL "THIS PROJECT IS BROUGHT TO YOU BY <a href="#">PAPIKELSDESIGN"</a></p>
+    </div>
+    <!---End-copy-Right----->
+    </div>
+    <!---End-content----->
+    </div>
+    <!---End-Wrap--->
+</body>
+
+</html>
